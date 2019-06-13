@@ -2,7 +2,7 @@ import unittest2
 import sys
 import json
 from main import *
-import HTMLTestRunner
+import HtmlTestRunner
 
 sys.path.append("../..")
 
@@ -121,4 +121,4 @@ class TestFunctions(unittest2.TestCase):
 
 
 if __name__ == '__main__':
-    HTMLTestRunner.main()
+    unittest2.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='example_dir'))
